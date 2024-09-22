@@ -1,0 +1,2 @@
+config:
+  gcp:project: demo-devops-2024-pulumi
