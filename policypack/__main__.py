@@ -1,3 +1,5 @@
+"""Fast and Loose Inc: Policy as Code"""
+
 from pulumi_policy import (
     EnforcementLevel,
     PolicyPack,
@@ -27,7 +29,7 @@ storage_bucket_no_public_access = ResourceValidationPolicy(
 )
 
 PolicyPack(
-    name="gcp-python",
+    name="Fast and Loose Inc: Pulumi Policy",
     enforcement_level=EnforcementLevel.MANDATORY,
     policies=[
         storage_bucket_no_public_access,
