@@ -3,7 +3,7 @@
 import pulumi
 from pulumi_gcp import storage
 
-# Create a GCP resource (Storage Bucket)
+# Create a bucket for user-data
 userData = storage.Bucket('user-data', location="US")
 
 binding = storage.BucketIAMBinding ("member", 
